@@ -87,7 +87,7 @@ class Record:
             day=birthday.day
         )
 
-        return (next_birthday.date() - today).days
+        return (next_birthday.date()-today).days
 
 
 
@@ -130,5 +130,3 @@ class AddressBook(UserDict):
         if page:
             yield page
 
-
-#contacts = AddressBook()
