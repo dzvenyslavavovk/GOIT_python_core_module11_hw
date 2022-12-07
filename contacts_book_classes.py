@@ -120,18 +120,15 @@ class AddressBook(UserDict):
     def iterator(self, count = 5):
         page = []
         i = 0
-
         for record in self.data.values():
             page.append(record)
             i += 1
-
             if i == count:
                 yield page
                 page = []
                 i = 0
-
         if page:
             yield page
 
 
-contacts = AddressBook()
+#contacts = AddressBook()
